@@ -19,7 +19,6 @@ html,body{
 
 .main-content{
 	margin: auto;
-	background: green;
 	height: 100%;
 	width: 50%;
 }
@@ -36,12 +35,13 @@ html,body{
 	text-decoration: none;
 	padding: 30px;
 	background: rgba(0,0,0,.5);
-	transition: .5s;
-	width: 80px;
+	min-width: 80px;
+	max-width: 300px;
 }
 
 .main-content a:hover{
 	background:rgba(0,0,0,.8);
+	transition: .5s;
 }
 
 .image.text{
