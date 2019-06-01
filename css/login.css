@@ -12,7 +12,7 @@ body{
 .background-wrapper{
 	display: flex;
 	min-height: 792px; 
-	background: url("../images/main-bg.jpg") no-repeat center fixed;
+	background: url("../images/main-bg.jpg") no-repeat center;
 	background-size: cover;
 	justify-content: center;
 	text-align: center;
