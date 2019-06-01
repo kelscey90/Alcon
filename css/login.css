@@ -12,17 +12,16 @@ body{
 .background-wrapper{
 	display: flex;
 	min-height: 792px; 
-	max-height: 100%;
-	background: url("../images/main-bg.jpg") no-repeat center;
+	background: url("../images/main-bg.jpg") no-repeat center fixed;
 	background-size: cover;
 	justify-content: center;
 	text-align: center;
 }
 
 .main-content{
+	margin: auto;
 	height: 100%;
 	width: 50%;
-	margin-top: 10%;	
 }
 
 .main-content li{
@@ -37,12 +36,12 @@ body{
 	text-decoration: none;
 	padding: 30px;
 	background: rgba(0,0,0,.5);
-	transition: .5s;
 	width: 80px;
 }
 
 .main-content a:hover{
 	background:rgba(0,0,0,.8);
+	transition: .5s;
 }
 
 .image.text{
@@ -50,3 +49,4 @@ body{
 	background: rgba(0,0,0,.5);
 	color: white;
 }
+
