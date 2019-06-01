@@ -1,0 +1,238 @@
+*{
+	font-family: 'Monsterrat', segoe UI light;
+	font-weight: 300;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: 1px;
+}
+
+body{
+}
+
+header{
+	background: rgba(18,18,18,.1);
+	height: 15px;
+	padding: 42px 15px;
+}
+
+.slider{
+	width: 35px;
+	cursor: pointer;
+}
+
+.bar{
+	height: 4px;
+	width: 30px;
+	background:rgba(0,0,0,1);
+	display: block;
+}
+.bar1{
+	transform: translateY(-4px);
+}
+.bar3{
+	transform: translateY(4px);
+}
+
+header a{
+	border: 1px solid rgba(0,0,0,.5);
+	color: rgba(0,0,0,1);
+	padding: 10px;
+	transition: .3s ease;
+	border-radius: 5px;
+}
+
+header a:hover{
+	background: rgba(255,255,255,1);
+}
+
+a{
+	text-decoration: none;
+}
+
+.container, .sidebar{
+	transition: .6s ease-in;
+}
+
+.container{
+	margin-left: 250px;
+}
+
+.move{
+	margin-left: 0px;
+}
+
+.active{
+	border-left: 2px solid rgba(255,255,255,1);	
+	background: rgba(0,0,0,.5);
+}
+
+.sidebar{
+	z-index: 1;
+	position: fixed;
+	height: 100%;
+	width: 250px;
+	left: 0;
+	top:0;
+	overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.show{
+	transform: translateX(-250px);
+}
+
+.sidebar h1{
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	background: rgba(18,18,18,1);
+	color: rgba(255,255,255,1);
+	font-size: 1rem;
+	padding: 38px 0px;
+}
+
+.menu{
+	height: 100%;
+	background: rgba(18,18,18,.9);
+}
+
+.menu a{
+	font-size: 15px;
+	display: block;
+	padding: 10px 10px;
+	color:white;
+}
+
+.menu .icon{
+	padding: 0px 30px 0px 30px;
+}
+
+.menu li:hover{
+	transition: .3s ease;
+	background: rgba(0,0,0,.5);
+}
+
+.dropdown{
+	display: none;
+	opacity: 0;
+}
+
+.drop{
+	display: block;
+	animation: animate 1s forwards;
+}
+
+.menu ul li{
+	background: rgba(255,255,255,.1);
+	padding-left: 20px;
+	display: block;
+}
+
+@keyframes animate{
+	0%{
+		opacity:0
+		background: rgba(0,0,0,0);
+		transform:translateX(150px);
+	}
+
+	100%{
+		transform: translateX(0px);
+		background: rgba(0,0,0,.2);
+		opacity:1
+	}
+}
+
+.main_content{
+	padding: 25px 25px;
+}
+
+.content_header{
+	height: 50px;
+}
+
+.left_header h1{
+	padding-bottom: 12px;
+	font-size: 22px;
+}
+
+.wrap{
+	flex-wrap: wrap;
+}
+
+.flex{
+	display: flex;
+}
+
+.bold{
+	font-weight: 600;
+}
+
+.thin{
+	font-weight: 200;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.cards{
+	margin: 10px 10px;
+	color: rgba(255,255,255,1);
+	text-align: center;
+	min-width: 288px;
+	height: 140px;
+	border-radius: 10px;
+	transition: .5s ease;
+	opacity: 1;
+}
+
+.one{
+	background: rgba(0,128,0,1);
+}
+
+.two{
+	background: rgba(0,0,128,1);
+}
+
+.three{
+	background: rgba(128,0,0,1);
+}
+
+.four{
+	background: rgba(128,0,128,1);
+}
+
+.cards:hover{
+	opacity: 1;
+	
+}
+
+.cards a{
+	color: rgba(255,255,255,1);
+}
+
+.cards p{
+	width: 100px;
+}
+
+.cards label{
+	font-size: 30px;
+}
+
+.cards_info{
+	height: 85px;
+	padding: 15px;
+}
+
+.button{
+	background: rgba(0,0,0,.3);
+	border-radius: 0px 0px 10px 10px;
+}
