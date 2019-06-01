@@ -1,63 +1,51 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Alcon Philippines System</title>
-	<link rel="stylesheet" type="text/css" href="../css/login.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
-<body>
+*{
+	font-family: Segoe UI Light;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+}
 
-	<div class="background-wrapper">
-
-		<div class="main-content">
-			<ul>
-				<li>
-					<a href="inventory.html">
-						<i class="fas fa-boxes fa-3x"></i>
-						<p>Inventory</p>
-					</a>
-				</li>
-
-				<li>
-					<a href="inventory.html">
-						<i class="fas fa-handshake fa-3x"></i>
-						<p>Sales</p>
-					</a>
-				</li>
-
-				<li>
-					<a href="inventory.html">
-						<i class="fas fa-user-clock fa-3x"></i>
-						<p>Payroll</p>
-					</a>
-				</li>
-
-				<li>
-					<a href="inventory.html">
-						<i class="fas fa-cash-register fa-3x"></i>
-						<p>Purchasing</p>
-					</a>
-				</li>
-
-				<li>
-					<a href="inventory.html">
-						<i class="fas fa-chart-bar fa-3x"></i>
-						<p>Accounting</p>
-					</a>
-				</li>
-
-				<li>
-					<a href="inventory.html">
-						<i class="fas fa-sitemap fa-3x"></i>
-						<p>Groupware</p>
-					</a>
-				</li>
-
-			</ul>
-		</div>
-
-	</div>
+body{
 	
+}
 
-</body>
-</html>
+.background-wrapper{
+	display: flex;
+	min-height: 792px; 
+	background: url("../images/main-bg.jpg") no-repeat center fixed;
+	background-size: cover;
+	justify-content: center;
+	text-align: center;
+}
+
+.main-content{
+	height: 100%;
+	width: 50%;
+	margin-top: 10%;	
+}
+
+.main-content li{
+	display: inline-flex;
+	margin: 1%;
+}
+
+.main-content a{
+	text-transform: capitalize;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	padding: 30px;
+	background: rgba(0,0,0,.5);
+	transition: .5s;
+	width: 80px;
+}
+
+.main-content a:hover{
+	background:rgba(0,0,0,.8);
+}
+
+.image.text{
+	padding: 50px;
+	background: rgba(0,0,0,.5);
+	color: white;
+}
