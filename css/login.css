@@ -6,13 +6,11 @@
 }
 
 html,body{
-	height: 100%;
-	width: 100%;
 }
 
 .background-wrapper{
 	display: flex;
-	height: 100%;
+	min-height: 100vh; 
 	background: url("../images/main-bg.jpg") no-repeat center fixed;
 	background-size: cover;
 	justify-content: center;
@@ -21,7 +19,8 @@ html,body{
 
 .main-content{
 	margin: auto;
-	height: 50%;
+	background: green;
+	height: 100%;
 	width: 50%;
 }
 
@@ -37,12 +36,12 @@ html,body{
 	text-decoration: none;
 	padding: 30px;
 	background: rgba(0,0,0,.5);
+	transition: .5s;
 	width: 80px;
 }
 
 .main-content a:hover{
 	background:rgba(0,0,0,.8);
-	transition: .5s;
 }
 
 .image.text{
