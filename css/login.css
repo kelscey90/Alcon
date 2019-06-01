@@ -11,7 +11,7 @@ body{
 
 .background-wrapper{
 	display: flex;
-	min-height: 792px; 
+	max-height: 792px; 
 	background: url("../images/main-bg.jpg") no-repeat center fixed;
 	background-size: cover;
 	justify-content: center;
